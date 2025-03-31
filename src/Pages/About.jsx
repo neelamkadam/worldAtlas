@@ -3,7 +3,7 @@ import CountryFacts from "../Api/Countrydata.json";
 import "../App.css";
 
 const About = () => {
-  console.log(CountryFacts);
+  // console.log(CountryFacts);
   return (
     <>
       <section className="section-about container">
