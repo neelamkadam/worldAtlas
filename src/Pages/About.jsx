@@ -1,5 +1,6 @@
 import React from "react";
 import CountryFacts from "../Api/Countrydata.json";
+import "../App.css";
 
 const About = () => {
   console.log(CountryFacts);
@@ -13,25 +14,26 @@ const About = () => {
         </h2>
         <div className="gradiant-cards">
           {CountryFacts.map((country) => {
-            const{id,countryName,capital,population,interestingFactt} = country;
+            const { id, countryName, capital, population, interestingFact } =
+              country;
             return (
               <>
                 <div className="card" key={id}>
                   <div className="container-card bg-blue-box">
                     <p className="card-title">{countryName}</p>
                     <p>
-                      <span className="card-discription">Capital:</span>
+                      <span className="card-description">Capital:</span>
                       {capital}
                     </p>
                     <p>
-                      <span className="card-discription">Population:</span>
+                      <span className="card-description">Population:</span>
                       {population}
                     </p>
                     <p>
-                      <span className="card-discription">
+                      <span className="card-description">
                         Interesting Fact:
                       </span>
-                      {interestingFactt}
+                      {interestingFact}
                     </p>
                   </div>
                 </div>

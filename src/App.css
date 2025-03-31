@@ -65,7 +65,7 @@ button{
     margin-top: 1.6rem;
 }
 .container{
-    max-width: 50rem;
+    max-width: 60rem;
     margin: auto;
 }
 .grid{
@@ -125,7 +125,7 @@ nav ul{
     gap: 2.5rem;
 } */
 .paragraph{
-    margin: 1.5rem 0;
+    margin: 1rem 0;
 }
 .heading-xl{
     font-family: inherit;
@@ -156,16 +156,17 @@ nav ul{
 /* ///about section */
 
 .section-about{
-    margin: 0 auto 9rem auto;
+    margin: 0 auto 2rem auto;
+    padding-top: 1rem;
 }
-.gradiant-card{
+.gradiant-cards{
     display: grid;
-    grid-template-columns: repeat(3.1fr);
-    gap:3.2rem;
+    grid-template-columns: repeat(3,1fr);
+    gap:1rem;
 }
 
 @media screen and (max-width:850px) {
-    .gradiant-card{
+    .gradiant-cards{
         grid-template-columns: 1fr;
     }
     
@@ -181,7 +182,7 @@ nav ul{
        line-height: 60px;
 }
 .card{
-    max-width: 55rem;
+    max-width: 20rem;
     border: 0;
     width: 100%;
     margin-inline: auto;
@@ -215,3 +216,19 @@ nav ul{
     background:linear-gradient(71deg,#0c0a0e,#5f6fad,#0c0a0e);
 }
 
+.card-title{
+    font-weight: 600;
+    color: white;
+    letter-spacing: -0.02em;
+    line-height: 40px;    
+    font-style: normal;
+    font-size: 28px;
+    padding-bottom: 8px;
+}
+.card-description{
+    font-weight: 600;
+    line-height: 32px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 16px;
+    max-width: 470px;
+}
