@@ -65,7 +65,7 @@ button{
     margin-top: 1.6rem;
 }
 .container{
-    max-width: 60rem;
+    max-width: 70rem;
     margin: auto;
 }
 .grid{
@@ -110,6 +110,39 @@ nav ul{
 }
 .ham-menu{
     display: none;
+}
+@media screen and (max-width:780px) {
+    .menu-web{
+        display: none;
+    }
+    .ham-menu{
+        display: flex;
+        justify-content: flex-end;
+        color: white;
+    }
+    .menu-mobile{
+        position: absolute;
+        top: 6rem;
+        left: 0;
+        background-color: black;
+        width: 100%;
+        box-shadow: rgba(255, 252, 252, 0.25) 0px 14px 28px;
+    }
+    .menu-mobile ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & li:first-child{
+            margin-top: 1.2rem;
+        }
+
+        & li:last-child{
+            margin-bottom: 1.2rem;
+        }
+    }
+
+    
 }
 
 /* hero section */
@@ -156,8 +189,7 @@ nav ul{
 /* ///about section */
 
 .section-about{
-    margin: 0 auto 2rem auto;
-    padding-top: 1rem;
+    margin: 0 auto 0rem auto;
 }
 .gradiant-cards{
     display: grid;
@@ -230,4 +262,122 @@ nav ul{
     color: rgba(255, 255, 255, 0.5);
     font-size: 16px;
     max-width: 470px;
+}
+
+
+/* ////Contact */
+
+.contact-wrapper{
+    display:flex;
+    justify-content: center;
+    text-align: center;
+} 
+.contact-wrapper form{
+    display: inline;
+  
+}
+.section-contact .container-title {
+    margin-top: 100px;
+}
+
+
+/* ///footer */
+.footer-section{
+    margin-top: 4rem;
+}
+ .footer-contact{
+    background-color: #202020;
+}
+.copyright-area{
+    background-color: #101010;
+}
+.copyright-area{
+    width: 100%;
+}
+.footer-menu{
+    color: white;
+    
+}
+.footer-contact {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.copyright-text {
+    margin-top: 10px;
+    text-align: center;
+}
+
+span {
+    color: white;
+}
+.footer-menu ul {
+    margin-top: 10px;
+    display: flex;
+    text-align: center;
+    justify-content: flex-end;
+    gap: 3rem;
+}
+
+/* ////country */
+.country-section{
+    margin: 4rem auto 2rem auto;
+}
+.gradiant-Countrycards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:1rem;
+}
+@media screen and (max-width:850px) {
+    .gradiant-Countrycards{
+        grid-template-columns: 1fr;
+    }
+    
+}
+.country-info{
+    display: flex;
+    gap: 1rem;
+    align-items: left;
+    font-family: inherit;
+    font-weight: 400;
+    line-height: 1;
+    cursor: pointer;
+    padding:0.4rem 2.7rem;
+    text-align: left;
+    outline: none;
+    border: none;
+    text-transform: unset;
+    transition: all 0.3s ease-in-out;
+    background:#202020;
+    color: white;
+    border-radius: 1.5rem;
+    border-width: 0.1rem;
+    border-style: solid;
+}
+.flag-img{
+    height: 6rem;
+    width: auto;
+}
+
+
+/* country filter */
+.section-searchFilter{
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+   
+}
+.section-searchFilter div{
+    width: 70rem;
+}
+.sortingData{
+    margin-bottom: 3rem;
+    text-align: center;
+    justify-content: center;
+}
+.section-searchFilter div input{
+    margin-top: 2rem;
+}
+.section-searchFilter div .select-section{
+    margin-top: 2rem;
 }

@@ -1,0 +1,17 @@
+[
+    {
+        "icon":"MdPlace",
+        "title":"Find us",
+        "details":"Pune, Maharshtra"
+    },
+    {
+        "icon":"IoCallSharp",
+        "title":"Call us",
+        "details":"9856254562"
+    },
+    {
+        "icon":"IoMail",
+        "title":"Mail us",
+        "details":"neelam@gmail.com"
+    }
+]
